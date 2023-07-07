@@ -1,0 +1,18 @@
+﻿@model CustomerProcessViewModel
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Customer Name</label>
+        <input type="text" class="form-control" asp-for="Name" />
+        <br />
+        <label>Amount to be withdrawn</label>
+        <input type="text" class="form-control" asp-for="Amount" />
+        <br />
+        <button class="btn btn-warning">Withdraw Money</button>
+    </form>
+</div>
